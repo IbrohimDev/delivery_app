@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/app_nav"
+    app:startDestination="@id/splashScreen">
+
+    <fragment
+        android:id="@+id/splashScreen"
+        android:name="uz.gita.evos_app.presentation.ui.screens.SplashScreen"
+        android:label="SplashScreen"
+        tools:layout="@layout/screen_splash">
+        <action
+            android:id="@+id/action_splashScreen_to_authScreen"
+            app:destination="@id/authScreen"
+            app:popUpTo="@id/splashScreen"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_splashScreen_to_mainScreen"
+            app:destination="@id/mainScreen"
+            app:popUpTo="@id/splashScreen"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/authScreen"
+        android:name="uz.gita.evos_app.presentation.ui.screens.AuthScreen"
+        android:label="AuthScreen"
+        tools:layout="@layout/screen_auth"/>
+    <fragment
+        android:id="@+id/mainScreen"
+        android:name="uz.gita.evos_app.presentation.ui.screens.MainScreen"
+        android:label="MainScreen"
+        tools:layout="@layout/screen_main">
+        <action
+            android:id="@+id/action_mainScreen_to_openMapScreen"
+            app:destination="@id/openMapScreen" />
+        <action
+            android:id="@+id/action_mainScreen_to_openFoodScreen"
+            app:destination="@id/openFoodScreen" />
+        <action
+            android:id="@+id/action_mainScreen_to_orderScreen"
+            app:destination="@id/orderScreen" />
+    </fragment>
+    <fragment
+        android:id="@+id/openMapScreen"
+        android:name="uz.gita.evos_app.presentation.ui.screens.OpenMapScreen"
+        android:label="OpenMapScreen"
+        tools:layout="@layout/screen_open_map">
+        <argument
+            android:name="data"
+            app:argType="uz.gita.evos_app.data.models.LocationData" />
+    </fragment>
+    <fragment
+        android:id="@+id/openFoodScreen"
+        android:name="uz.gita.evos_app.presentation.ui.screens.OpenFoodScreen"
+        android:label="OpenFoodScreen"
+        tools:layout="@layout/screen_open_food">
+        <argument
+            android:name="data"
+            app:argType="uz.gita.evos_app.data.models.FoodData" />
+    </fragment>
+    <fragment
+        android:id="@+id/orderScreen"
+        android:name="uz.gita.evos_app.presentation.ui.screens.OrderScreen"
+        android:label="OrderScreen"
+        tools:layout="@layout/screen_order">
+        <action
+            android:id="@+id/action_orderScreen_to_openFoodScreen"
+            app:destination="@id/openFoodScreen" />
+    </fragment>
+</navigation>

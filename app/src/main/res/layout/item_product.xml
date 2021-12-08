@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="2dp"
+    app:cardUseCompatPadding="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="4dp">
+
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/ivProductImage"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="1"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:riv_corner_radius="8dp"
+            tools:src="@drawable/secondimage" />
+
+
+        <TextView
+            android:id="@+id/tvTitle"
+            style="@style/TextAppearance.AppCompat.Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:gravity="center|start"
+            android:maxWidth="120dp"
+            android:maxLines="2"
+            app:layout_constraintBottom_toTopOf="@id/tvCost"
+
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintLeft_toRightOf="@id/ivProductImage"
+            app:layout_constraintRight_toLeftOf="@id/check_layout"
+            app:layout_constraintTop_toTopOf="@id/ivProductImage"
+            tools:text="@tools:sample/lorem/random" />
+
+        <TextView
+            android:id="@+id/tvCost"
+            style="@style/TextAppearance.AppCompat.Body2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintBottom_toBottomOf="@id/ivProductImage"
+            app:layout_constraintLeft_toLeftOf="@id/tvTitle"
+            app:layout_constraintRight_toLeftOf="@id/check_layout"
+            app:layout_constraintTop_toBottomOf="@id/tvTitle"
+
+            tools:text="21 000 so`m" />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/check_layout"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="10dp"
+
+            android:layout_marginBottom="8dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+
+            app:layout_constraintHorizontal_bias="1"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/deleteItem"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/delete_background"
+                android:gravity="center"
+                android:foreground="?selectableItemBackgroundBorderless"
+                android:text="-"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/countItem"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="1x"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/addItem"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:foreground="?selectableItemBackgroundBorderless"
+                android:layout_weight="1"
+                android:background="@drawable/bascet_background"
+                android:gravity="center"
+                android:text="+"
+                android:textColor="@color/white"
+
+                android:textStyle="bold" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/add_btn"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/bascet_background"
+            android:text="Qo'shish"
+            android:textColor="@color/white"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="@id/check_layout"
+            app:layout_constraintLeft_toLeftOf="@id/check_layout"
+            app:layout_constraintRight_toRightOf="@id/check_layout"
+            app:layout_constraintTop_toTopOf="@id/check_layout" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

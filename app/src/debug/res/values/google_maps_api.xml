@@ -1,0 +1,24 @@
+<resources>
+    <!--
+    TODO: Before you run your application, you need a Google Maps API key.
+
+    To get one, follow this link, follow the directions and press "Create" at the end:
+
+    https://console.developers.google.com/flows/enableapi?apiid=maps_android_backend&keyType=CLIENT_SIDE_ANDROID&r=44:F2:41:8A:02:03:EE:FA:2E:42:66:EA:70:4D:51:89:56:A7:4B:99%3Buz.gita.evos_app
+
+    You can also add your credentials to an existing key, using these values:
+
+    Package name:
+    uz.gita.evos_app
+
+    SHA-1 certificate fingerprint:
+    44:F2:41:8A:02:03:EE:FA:2E:42:66:EA:70:4D:51:89:56:A7:4B:99
+
+    Alternatively, follow the directions here:
+    https://developers.google.com/maps/documentation/android/start#get-key
+
+    Once you have your key (it starts with "AIza"), replace the "google_maps_key"
+    string in this file.
+    -->
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyBtMTIx0UOiCcIGz0OsWasPeb-xq0F095A</string>
+</resources>

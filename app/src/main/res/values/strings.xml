@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">evos_app</string>
+    <string name="title_activity_maps">MapsActivity</string>
+    <string name="splash_txt">Demo version of evos app</string>
+    <string name="popular">Ommabop buyurtmalar</string>
+    <string name="go_to_menu">Menyuni ko\'rish</string>
+    <string name="action">Aksiya</string>
+    <string name="to_basket">+Savatga</string>
+</resources>

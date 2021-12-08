@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:background="@drawable/search_background"
+    android:elevation="6dp">
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/roundedImageViewFood"
+        app:layout_constraintDimensionRatio="25:18"
+        app:layout_constraintTop_toTopOf="parent"
+        app:riv_corner_radius_bottom_left="0dp"
+        app:riv_corner_radius_bottom_right="0dp"
+        app:riv_corner_radius_top_left="8dp"
+        app:riv_corner_radius_top_right="8dp"
+        android:scaleType="centerCrop"
+        tools:src="@drawable/page_image_2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"/>
+
+    <TextView
+        android:id="@+id/textViewName"
+        android:layout_width="match_parent"
+        android:layout_height="34dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginHorizontal="10dp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:lines="2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/roundedImageViewFood"
+        tools:text="Turkcha osh" />
+
+    <TextView
+         android:id="@+id/textViewCost"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="5dp"
+         android:layout_marginHorizontal="10dp"
+         android:gravity="center"
+         android:textColor="@color/light"
+         android:textSize="14sp"
+         app:layout_constraintEnd_toEndOf="parent"
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintTop_toBottomOf="@id/textViewName"
+         tools:text="23 000 so'm" />
+
+    <TextView
+        android:id="@+id/textViewCounter"
+        android:gravity="center"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:fontFamily="@font/hnc_bold"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toStartOf="@id/imagePlus"
+        app:layout_constraintStart_toEndOf="@id/imageMinus"
+        app:layout_constraintTop_toBottomOf="@id/textViewCost"
+        android:layout_marginTop="10dp"
+        android:text="1x"
+        android:textColor="@color/black"
+        android:layout_width="0dp"
+        android:layout_height="40dp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/imageMinus"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginVertical="10dp"
+        android:layout_marginHorizontal="25dp"
+        android:background="@drawable/background_minus"
+        android:elevation="6dp"
+        android:fontFamily="@font/hnc_bold"
+        android:textSize="12sp"
+        android:text="-"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewCost" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/imagePlus"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginHorizontal="25dp"
+        android:layout_marginVertical="10dp"
+        android:background="@drawable/background_plus"
+        android:elevation="6dp"
+        android:fontFamily="@font/hnc_bold"
+        android:textSize="12sp"
+        android:text="+"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewCost" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonAdd"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginVertical="10dp"
+        android:background="@drawable/item_menu_basket"
+        android:layout_marginHorizontal="25dp"
+        android:elevation="6dp"
+        android:fontFamily="@font/hnc_bold"
+        android:text="@string/to_basket"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        app:layout_constraintTop_toBottomOf="@id/textViewCost"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

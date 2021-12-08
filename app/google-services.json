@@ -1,0 +1,185 @@
+{
+  "project_info": {
+    "project_number": "192210985091",
+    "firebase_url": "https://myevosclone-default-rtdb.firebaseio.com",
+    "project_id": "myevosclone",
+    "storage_bucket": "myevosclone.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:192210985091:android:223ce03db9a1278eb27bb6",
+        "android_client_info": {
+          "package_name": "com.example.fooddelivery"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "192210985091-2qodm89dontr4r3gug2knt3ofhj09t22.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDeaKo_ew4FzTfC9iJk_pImA1Y5-LUHNAw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "192210985091-2qodm89dontr4r3gug2knt3ofhj09t22.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:192210985091:android:441e5a8c4ad13924b27bb6",
+        "android_client_info": {
+          "package_name": "uz.gita.deliveryapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "192210985091-2qodm89dontr4r3gug2knt3ofhj09t22.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDeaKo_ew4FzTfC9iJk_pImA1Y5-LUHNAw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "192210985091-2qodm89dontr4r3gug2knt3ofhj09t22.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:192210985091:android:30392b96ef98dce2b27bb6",
+        "android_client_info": {
+          "package_name": "uz.gita.evos_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "192210985091-2qodm89dontr4r3gug2knt3ofhj09t22.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDeaKo_ew4FzTfC9iJk_pImA1Y5-LUHNAw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "192210985091-2qodm89dontr4r3gug2knt3ofhj09t22.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:192210985091:android:b2a7717f0e8a8f0eb27bb6",
+        "android_client_info": {
+          "package_name": "uz.gita.myfooddeliveryapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "192210985091-2qodm89dontr4r3gug2knt3ofhj09t22.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDeaKo_ew4FzTfC9iJk_pImA1Y5-LUHNAw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "192210985091-2qodm89dontr4r3gug2knt3ofhj09t22.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:192210985091:android:bc6beb062ce0d573b27bb6",
+        "android_client_info": {
+          "package_name": "uz.xsoft.myevosadmin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "192210985091-2qodm89dontr4r3gug2knt3ofhj09t22.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDeaKo_ew4FzTfC9iJk_pImA1Y5-LUHNAw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "192210985091-2qodm89dontr4r3gug2knt3ofhj09t22.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:192210985091:android:b8c11555ec5cadb5b27bb6",
+        "android_client_info": {
+          "package_name": "uz.xsoft.myevosclone"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "192210985091-2qodm89dontr4r3gug2knt3ofhj09t22.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDeaKo_ew4FzTfC9iJk_pImA1Y5-LUHNAw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "192210985091-2qodm89dontr4r3gug2knt3ofhj09t22.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
